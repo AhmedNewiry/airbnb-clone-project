@@ -35,3 +35,6 @@ The Airbnb Clone Project is a full-stack web application designed to replicate c
 - **Data Protection**: Employs HTTPS and encryption for sensitive data (e.g., payment details), safeguarding user information and transactions.
 
 Security is vital to protect user data, prevent fraud in payments, and maintain trust in the platform, especially for financial transactions and personal information.
+
+## CI/CD Pipeline
+CI/CD pipelines automate the process of building, testing, and deploying code, ensuring faster and more reliable releases. They are crucial for maintaining code quality, catching errors early, and enabling seamless collaboration in team environments. Tools like **GitHub Actions** can be used to define workflows for running tests and deploying to production, while **Docker** ensures consistent environments across development stages.
