@@ -14,3 +14,10 @@ The Airbnb Clone Project is a full-stack web application designed to replicate c
 - **PostgreSQL**: A relational database management system used for storing and managing data, offering robust support for complex queries and scalability.
 - **GraphQL**: A query language for APIs that allows clients to request specific data, improving efficiency and flexibility in data retrieval.
 - **Docker**: A containerization platform used to package the application and its dependencies, ensuring consistent environments across development, testing, and production.
+
+## Database Design
+- **Users**: Fields: `user_id` (primary key), `email`, `password_hash`, `name`, `phone`. Relationships: A user can own multiple properties and create multiple bookings or reviews.
+- **Properties**: Fields: `property_id` (primary key), `owner_id` (foreign key to Users), `title`, `description`, `price_per_night`. Relationships: A property belongs to one user and can have multiple bookings and reviews.
+- **Bookings**: Fields: `booking_id` (primary key), `property_id` (foreign key to Properties), `user_id` (foreign key to Users), `start_date`, `end_date`. Relationships: A booking is associated with one property and one user.
+- **Reviews**: Fields: `review_id` (primary key), `property_id` (foreign key to Properties), `user_id` (foreign key to Users), `rating`, `comment`. Relationships: A review is linked to one property and one user.
+- **Payments**: Fields: `payment_id` (primary key), `booking_id` (foreign key to Bookings), `amount`, `payment_date`, `status`. Relationships: A payment is tied to one booking.
