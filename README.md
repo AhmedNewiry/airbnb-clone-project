@@ -27,3 +27,11 @@ The Airbnb Clone Project is a full-stack web application designed to replicate c
 - **Property Management**: Enables property owners to list, edit, and delete their accommodations, supporting the core business logic of the platform.
 - **Booking System**: Facilitates searching, reserving, and managing bookings for properties, streamlining the user journey from discovery to confirmation.
 - **Review System**: Allows users to leave ratings and comments on properties, enhancing trust and transparency within the platform.
+
+## API Security
+- **Authentication**: Implements JWT (JSON Web Tokens) or OAuth to verify user identities, protecting endpoints from unauthorized access.
+- **Authorization**: Uses role-based access control (RBAC) to restrict actions based on user roles, ensuring users only access permitted resources.
+- **Rate Limiting**: Caps the number of API requests per user to prevent abuse and maintain server performance, critical for scalability.
+- **Data Protection**: Employs HTTPS and encryption for sensitive data (e.g., payment details), safeguarding user information and transactions.
+
+Security is vital to protect user data, prevent fraud in payments, and maintain trust in the platform, especially for financial transactions and personal information.
