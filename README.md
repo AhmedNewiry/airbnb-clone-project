@@ -21,3 +21,9 @@ The Airbnb Clone Project is a full-stack web application designed to replicate c
 - **Bookings**: Fields: `booking_id` (primary key), `property_id` (foreign key to Properties), `user_id` (foreign key to Users), `start_date`, `end_date`. Relationships: A booking is associated with one property and one user.
 - **Reviews**: Fields: `review_id` (primary key), `property_id` (foreign key to Properties), `user_id` (foreign key to Users), `rating`, `comment`. Relationships: A review is linked to one property and one user.
 - **Payments**: Fields: `payment_id` (primary key), `booking_id` (foreign key to Bookings), `amount`, `payment_date`, `status`. Relationships: A payment is tied to one booking.
+
+## Feature Breakdown
+- **User Management**: Allows users to register, log in, and manage their profiles, ensuring personalized experiences and secure access to the platform.
+- **Property Management**: Enables property owners to list, edit, and delete their accommodations, supporting the core business logic of the platform.
+- **Booking System**: Facilitates searching, reserving, and managing bookings for properties, streamlining the user journey from discovery to confirmation.
+- **Review System**: Allows users to leave ratings and comments on properties, enhancing trust and transparency within the platform.
